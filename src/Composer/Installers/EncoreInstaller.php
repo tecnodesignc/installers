@@ -19,11 +19,11 @@ class EncoreInstaller extends BaseInstaller
      */
     public function inflectPackageVars(array $vars): array
     {
-        if ($vars['type'] === 'asgard-module') {
+        if ($vars['type'] === 'encore-module') {
             return $this->inflectPluginVars($vars);
         }
 
-        if ($vars['type'] === 'asgard-theme') {
+        if ($vars['type'] === 'encore-theme') {
             return $this->inflectThemeVars($vars);
         }
 
